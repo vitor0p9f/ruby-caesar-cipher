@@ -1,3 +1,3 @@
-def shift_letter(_letter, _offset)
-  'C'
+def shift_letter(letter, offset)
+  (letter.ord + offset).chr
 end
