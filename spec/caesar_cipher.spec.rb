@@ -8,5 +8,11 @@ RSpec.describe 'Caesar cipher' do
 
       expect(shifted_letter).to eq 'C'
     end
+
+    it 'should shift a letter to the left from an offset' do
+      shifted_letter = shift_letter('Z', -1)
+
+      expect(shifted_letter).to eq 'Y'
+    end
   end
 end
