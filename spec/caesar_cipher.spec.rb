@@ -14,5 +14,11 @@ RSpec.describe 'Caesar cipher' do
 
       expect(shifted_letter).to eq 'Y'
     end
+
+    it "should return to the beginning of the alphabet when 'Z' is shifted to the right" do
+      shifted_letter = shift_letter('Z', 1)
+
+      expect(shifted_letter).to eq 'A'
+    end
   end
 end
