@@ -1,4 +1,5 @@
-require 'caesar_cipher'
+require_relative '../caesar_cipher'
+require 'spec_helper'
 
 RSpec.describe 'Caesar cipher' do
   context 'Auxiliar functions' do
