@@ -6,6 +6,10 @@ def shift_letter(letter, offset)
     'z' => 122
   }
 
+  unless (ascii_code['a']..ascii_code['z']).include?(letter.ord) || (ascii_code['A']..ascii_code['Z']).include?(letter.ord)
+    return letter
+  end
+
   if (ascii_code['A']..ascii_code['Z']).include?(letter.ord + offset) || (ascii_code['a']..ascii_code['z']).include?(letter.ord + offset)
     return (letter.ord + offset).chr
   end
