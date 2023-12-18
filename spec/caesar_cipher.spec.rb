@@ -49,4 +49,16 @@ RSpec.describe 'Caesar cipher' do
       expect(shifted_letter).to eq '#'
     end
   end
+
+  context 'Main function' do
+    it 'should encrypt a message using Caesar cipher' do
+      encrypted_message = encrypt_message_with_caesar_cipher('Hello world!', 2)
+
+      expect(encrypted_message).to eq 'Jgnnq yqtnf!'
+
+      encrypted_message = encrypt_message_with_caesar_cipher('Hello world!', -5)
+
+      expect(encrypted_message).to eq 'Czggj rjmgy!'
+    end
+  end
 end
