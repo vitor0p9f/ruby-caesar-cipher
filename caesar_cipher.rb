@@ -6,9 +6,21 @@ def shift_letter(letter, offset)
     'z' => 122
   }
 
-  return (ascii_code['a'] + (offset - 1)).chr if (letter.ord + offset) > ascii_code['z']
+  if (ascii_code['A']..ascii_code['Z']).include?(letter.ord + offset) || (ascii_code['a']..ascii_code['z']).include?(letter.ord + offset)
+    return (letter.ord + offset).chr
+  end
 
-  return (ascii_code['A'] + (offset - 1)).chr if (letter.ord + offset) > ascii_code['Z']
+  if offset.positive?
+    if letter.ord + offset > ascii_code['Z'] && letter.ord + offset < ascii_code['a']
+      return (ascii_code['A'] + offset - 1).chr
+    end
 
-  (letter.ord + offset).chr
+    (ascii_code['a'] + (offset - 1)).chr if (letter.ord + offset) > ascii_code['z']
+  elsif offset.negative?
+    if letter.ord + offset < ascii_code['a'] && letter.ord + offset > ascii_code['Z']
+      return (ascii_code['z'] + offset + 1).chr
+    end
+
+    (ascii_code['Z'] + (offset + 1)).chr if (letter.ord + offset) < ascii_code['A']
+  end
 end
