@@ -26,5 +26,17 @@ RSpec.describe 'Caesar cipher' do
 
       expect(shifted_letter).to eq 'a'
     end
+
+    it "should go to end of alphabet when 'a' is shifted to left" do
+      shifted_letter = shift_letter('a', -1)
+
+      expect(shifted_letter).to eq 'z'
+    end
+
+    it "should go to end of alphabet when 'A' is shifted to left" do
+      shifted_letter = shift_letter('A', -1)
+
+      expect(shifted_letter).to eq 'Z'
+    end
   end
 end
