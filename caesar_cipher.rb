@@ -16,15 +16,19 @@ def shift_letter(letter, offset)
 
   if offset.positive?
     if letter.ord + offset > ascii_code['Z'] && letter.ord + offset < ascii_code['a']
-      return (ascii_code['A'] + offset - 1).chr
+      return (ascii_code['A'] + (letter.ord + offset - 1 - ascii_code['Z'])).chr
     end
 
     (ascii_code['a'] + (offset - 1)).chr if (letter.ord + offset) > ascii_code['z']
   elsif offset.negative?
     if letter.ord + offset < ascii_code['a'] && letter.ord + offset > ascii_code['Z']
-      return (ascii_code['z'] + offset + 1).chr
+      return (ascii_code['z'] + (letter.ord + offset + 1 - ascii_code['a'])).chr
     end
 
     (ascii_code['Z'] + (offset + 1)).chr if (letter.ord + offset) < ascii_code['A']
   end
+end
+
+def encrypt_message_with_caesar_cipher(message, offset)
+  message.split('').map { |letter| shift_letter(letter, offset) }.join
 end
