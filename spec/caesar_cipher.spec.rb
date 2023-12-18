@@ -38,5 +38,15 @@ RSpec.describe 'Caesar cipher' do
 
       expect(shifted_letter).to eq 'Z'
     end
+
+    it "shouldn't shift special characteres" do
+      shifted_letter = shift_letter('!', 4)
+
+      expect(shifted_letter).to eq '!'
+
+      shifted_letter = shift_letter('#', -10)
+
+      expect(shifted_letter).to eq '#'
+    end
   end
 end
