@@ -32,3 +32,19 @@ end
 def encrypt_message_with_caesar_cipher(message, offset)
   message.split('').map { |letter| shift_letter(letter, offset) }.join
 end
+
+print 'Type a message to be encrypted: '
+
+user_message = gets
+
+print "\n"
+
+print 'Choose the size of the shift (positive values represent a shift to the right, while negative value represent a shift to the left): '
+
+offset = gets
+
+print "\n"
+
+print 'Your message encrypted with the Cesar cipher is: '
+
+puts encrypt_message_with_caesar_cipher(user_message, offset.to_i)
