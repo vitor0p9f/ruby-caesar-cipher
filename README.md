@@ -2,7 +2,7 @@
   <p>This README is available in the following languages:</p>
   <br/>
   
-  <a href = "#" target="_blank">
+  <a href = "https://github.com/vitor0p9f/ruby-caesar-cipher/blob/main/README.en.md" target="_blank">
     <img src="https://img.shields.io/badge/Language-English-blue"/>
   </a>
 </div>
@@ -35,7 +35,7 @@ Este projeto foi desenvolvido com o objetivo de aprender mais sobre a linguagem 
 
 ## :triangular_flag_on_post: Desafios encontrados
 
-* Criar regex's para verificações de strings.
+* Criar regex para verificações de strings.
 
 ## :rocket: Executando o projeto 
 
