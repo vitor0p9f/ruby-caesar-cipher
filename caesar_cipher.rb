@@ -37,7 +37,15 @@ print "\n"
 
 print 'Choose the size of the shift (positive values represent a shift to the right, while negative value represent a shift to the left): '
 
-offset = gets
+until (offset = gets).match(/-?[0-9]/)
+  print "\n"
+
+  puts 'The input should be a number!'
+
+  print "\n"
+
+  print 'Choose the size of the shift (positive values represent a shift to the right, while negative value represent a shift to the left): '
+end
 
 print "\n"
 
