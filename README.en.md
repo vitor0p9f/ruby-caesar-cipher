@@ -12,7 +12,13 @@
   # Study Repository - Ruby Caesar cipher
 </div>
 
-This project was developed with the aim of learning more about the Ruby programming language and its concepts by applying them to the construction of an algorithm that performs text conversion using the Caesar cipher.
+<p align="justify">
+  This project was developed with the aim of learning more about the Ruby programming language and its concepts by applying them to the construction of an algorithm that performs text conversion using the Caesar cipher.
+</p>
+
+## :movie_camera: Project demonstration
+
+https://github.com/vitor0p9f/ruby-caesar-cipher/assets/153991573/70808cfd-afe9-4413-b58e-fe0205b9a785
 
 ## :gem: Used Gems
 
