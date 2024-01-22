@@ -12,7 +12,13 @@
   # Repositório de estudo - Ruby Caesar cipher
 </div>
 
-Este projeto foi desenvolvido com o objetivo de aprender mais sobre a linguagem de programação Ruby e seus conceitos, por meio da aplicação dos mesmos para a construção de um algoritmo que realize a conversão de um texto utilizando a cifra de Cesar.
+<p align="justify">
+  Este projeto foi desenvolvido com o objetivo de aprender mais sobre a linguagem de programação Ruby e seus conceitos, por meio da aplicação dos mesmos para a construção de um algoritmo que realize a conversão de um texto utilizando a cifra de Cesar.
+</p>
+
+## :movie_camera: Demonstração do projeto
+
+https://github.com/vitor0p9f/ruby-caesar-cipher/assets/153991573/20f75489-bcab-411c-b4f4-e197015ac829
 
 ## :gem: Gems utilizadas
 
